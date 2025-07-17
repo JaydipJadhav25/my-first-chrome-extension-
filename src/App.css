@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,17 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+
+#myDiv{
+  background-color : orange;
+  position: fixed;
+  width: 30px;
+  padding: 30px;
+  height: 50px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
 }

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "My Vite Chrome Extension",
+  "version": "1.0",
+  "description": "A basic Chrome Extension using Vite setup",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/content.jsx-loader.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "**/*",
+        "*"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
